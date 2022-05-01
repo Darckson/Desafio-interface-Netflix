@@ -1,0 +1,111 @@
+:root{
+    --vermelho:#cd0700e8;
+    --preto:#141414;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+reader nav a{
+    text-decoration: none;
+    color:aliceblue; 
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+reader nav a:hover{
+    color: rgb(97, 110, 158);
+
+}
+
+/*elementos base*/
+
+body{
+background-color: var(--preto);
+font-family: 'Times New Roman', Times, serif;
+color: white;
+}
+
+reader .container{
+    display: flex;
+    -ms-flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 5px solid rgb(158, 47, 47); */
+
+}
+
+reader .corlogo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)
+    100%),url(img/cpa2.jpg);
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+     
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.container .descricao{
+     margin-bottom: 40px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.botao{
+    background-color: rgba(19, 9, 9, 0.50);
+    border: none;
+    color: rgb(167, 200, 230);
+    padding: 15px 30px;
+
+    margin-right: 15px;
+    font: 12px;
+    cursor: pointer;
+    transition: 3s ease all;
+
+}
+
+.botao:hover{
+    background-color: rgb(237, 242, 243);
+    color: black;
+}
+  
+.container{
+    margin-left: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 75%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filme{
+    margin-top: 7px;
+}
